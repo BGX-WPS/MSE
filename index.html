@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Produksi</title>
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tautan ke file CSS kita -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+            <nav class="menu">
+                <!-- Menggunakan href="#" agar tidak pindah halaman saat diklik, event akan ditangani JS -->
+                <a href="#" id="btn-input"><i class="fas fa-keyboard"></i> Input Produksi</a>
+                <a href="#" id="btn-laporan"><i class="fas fa-chart-bar"></i> Filter Laporan</a>
+                <a href="#" id="btn-master"><i class="fas fa-cog"></i> Kelola Master</a>
+            </nav>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="content" id="content">
+            <!-- Konten default saat halaman pertama kali dibuka -->
+            <div class="welcome-section">
+                <h2>Selamat Datang</h2>
+                <p>Silakan pilih menu di sidebar untuk memulai.</p>
+                <p>Data tersimpan realtime ke Google Sheets (fitur ini perlu diimplementasikan terpisah).</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Tautan ke file JavaScript kita -->
+    <script src="script.js"></script>
+</body>
+</html>
